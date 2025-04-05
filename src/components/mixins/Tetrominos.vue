@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            keys: ['I', 'J', 'L', 'O', 'T', 'Z'],
+            keys: ['I', 'J', 'L', 'O', 'T', 'Z', 'S'],
             tetrominos: {
                 I: {
                     name: 'I',
@@ -85,6 +85,20 @@ export default {
                     struct: [
                         [1, 1, 0],
                         [0, 1, 1],
+                        [0, 0, 0],
+                    ],
+                },
+                S: {
+                    name: 'S',
+                    colour: '#00fd00',
+                    lineColour: '#02a504',
+                    currentRow: -2,
+                    column: 3,
+                    nextCol: 1.5,
+                    nextRow: 1,
+                    struct: [
+                        [0, 1, 1],
+                        [1, 1, 0],
                         [0, 0, 0],
                     ],
                 }
